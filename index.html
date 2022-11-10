@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>animated webdesign</title>
+</head>
+<body>
+    <div class="container">
+       <header>
+            <div class="logo">
+                <a href="">mamon<span>dots</span></a>
+            </div>
+            <div class="menu">
+                <ul>
+                   <li><a href="" class="active">home</a></li>
+                   <li><a href="">services</a></li>
+                   <li><a href="">protfolio</a></li>
+                   <li><a href="">about us</a></li>
+                   <li><a href="">blog</a></li>
+                </ul>
+            </div>
+            <div class="btns">
+                
+                <button class="btn-02">get started</button>
+            </div>
+       </header>
+       <div class="content">
+           <div class="information">
+             <h1>Mamondots is the first priority<br>
+                your cyber security.
+            </h1>
+            <p>
+               You might wonder why a design would choose<br>
+               to use Morem text Patagraphs in English or<br>
+                their native language.
+            </p>
+            <div class="content-btns">
+                <button class="btn btn01">get started</button>
+                <button class="btn btn02"><i class="fa-solid fa-play"></i> How it work</button>
+            </div>
+           </div>
+           <div class="img-sites">
+               <div class="hero-img">
+                   <img src="img/cyber_banner_image.0a3cff57.svg">
+               </div>
+               <div class="circle"></div>
+               <div class="circle circle-02"></div>
+           </div>
+       </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        let animation = anime({
+          targets:'header',
+          translateY:[-40,1],
+          opacity:[0,1],
+          duration:800,
+          easing:'easeInOutSine',
+        });
+
+        anime({
+          targets:'.information h1',
+          translateY:[-40,1],
+          opacity:[0,1],
+          duration:800,
+          easing:'easeInOutSine',
+          delay:300,
+        });
+
+        anime({
+          targets:'.information p',
+          translateX:[-40,1],
+          opacity:[0,1],
+          duration:800,
+          easing:'easeInOutSine',
+          delay:500,
+        });
+
+        anime({
+          targets:'.content-btns',
+          translateX:[40,1],
+          opacity:[0,1],
+          duration:800,
+          easing:'easeInOutSine',
+          delay:600,
+        });
+
+        anime({
+          targets:'.hero-img',
+          translateX:[80,1],
+          opacity:[0,1],
+          duration:800,
+          easing:'easeInOutSine',
+          delay:900,
+        });
+
+        anime({
+          targets:'.circle',
+          translateY:[40,1],
+          opacity:[0,1],
+          duration:800,
+          easing:'easeInOutSine',
+          delay:1000,
+        });
+
+    </script>
+</body>
+</html>
